@@ -30,8 +30,10 @@ double setpoint = originalSetpoint;
 double movingAngleOffset = 0.1;
 double input, output;
 int moveState=0; //0 = balance; 1 = back; 2 = forth
-
-PID pid(&input, &output, &setpoint, 50, 40, 1.4, DIRECT);
+Kp = 50;
+Kd = 1.4;
+Ki = 60;
+PID pid(&input, &output, &setpoint, Kp, Ki, Kd, DIRECT);
 
 
 //MOTOR CONTROLLER
@@ -41,7 +43,7 @@ int IN2 = 7;
 int IN3 = 8;
 int IN4 = 9;
 int ENB = 10;
-LMotorController motorController(ENA, IN1, IN2, ENB, IN3, IN4, 0.6, 0.6);
+LMotorController motorController(ENA, IN1, IN2, ENB, IN3, IN4, motorSpeedFactorLeft, motorSpeedFactorRight);
 
 //timers
 long time1Hz = 0;
