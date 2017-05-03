@@ -4,7 +4,7 @@ This project is seen on DIYHacking: https://diyhacking.com/build-arduino-self-ba
 
 This repo includes the library needed to build the robot.
 
-Credits to the original creator of these libraries
-  MPU6050
-  PID
+Credits to the original creator of these libraries: 
+  MPU6050, 
+  PID, 
   LMotorController
