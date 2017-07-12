@@ -35,7 +35,8 @@ double Kd = 1.4;
 double Ki = 60;
 PID pid(&input, &output, &setpoint, Kp, Ki, Kd, DIRECT);
 
-
+double motorSpeedFactorLeft = 0.6;
+double motorSpeedFactorRight = 0.5;
 //MOTOR CONTROLLER
 int ENA = 5;
 int IN1 = 6;
