@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Arduino Self-Balancing Robot
 
 A self balancing robot using [Arduino PID]
